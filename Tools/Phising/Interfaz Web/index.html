@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phishing-Intereses</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Detector de Interés</h1>
+            <div class="form">
+                <label for="imageInput" class="file-label">Seleccionar imagen</label>
+                <input type="file" id="imageInput" accept="image/*">
+                <button onclick="processImage()">Procesar imagen</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
